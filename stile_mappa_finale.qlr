@@ -1,0 +1,405 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group checked="Qt::Checked" expanded="1" name="">
+    <customproperties/>
+    <layer-tree-layer checked="Qt::Checked" expanded="1" legend_exp="" id="mappa_finale_99872f7a_b483_485e_b25f_ae3764132e03" providerKey="ogr" legend_split_behavior="0" source="./mappa_finale.shp|layername=mappa_finale" name="mappa_finale" patch_size="-1,-1">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer refreshOnNotifyMessage="" simplifyDrawingTol="1" geometry="Polygon" refreshOnNotifyEnabled="0" minScale="100000000" styleCategories="AllStyleCategories" autoRefreshTime="0" simplifyLocal="1" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" autoRefreshEnabled="0" simplifyAlgorithm="0" maxScale="0" type="vector" readOnly="0" labelsEnabled="0" wkbType="MultiPolygonZ">
+      <extent>
+        <xmin>10.46997493307750027</xmin>
+        <ymin>44.1153689170630372</ymin>
+        <xmax>11.3030904799821883</xmax>
+        <ymax>44.95357476809188313</ymax>
+      </extent>
+      <id>mappa_finale_99872f7a_b483_485e_b25f_ae3764132e03</id>
+      <datasource>./mappa_finale.shp|layername=mappa_finale</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>mappa_finale</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal startExpression="" endExpression="" enabled="0" fixedDuration="0" endField="" durationUnit="min" durationField="" accumulate="0" mode="0" startField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
+        <rules key="{7d69048a-2393-4292-9c2e-9fe203a627be}">
+          <rule key="{9ce631da-e2ad-4120-95a6-008419d30bbe}" symbol="0" label="Lontano dal traffico" filter="&quot;classifica&quot;  =  'lontano dal traffico' "/>
+          <rule key="{a455dd58-96d5-4fdd-ab2f-7624960ed37f}" symbol="1" label="Fisicamente protetto" filter="&quot;classifica&quot;= 'fisicamente protetto' "/>
+          <rule key="{e8807788-43c5-4114-9ee2-64420b30a00a}" symbol="2" label="corsia dedicata in sede stradale" filter="&quot;classifica&quot; =  'fisicamente protetto in sede stradale' "/>
+          <rule key="{da7817fd-0dc0-4f85-b3b1-35a8459f9fe9}" symbol="3" label="Vicino a traffico lento" filter="&quot;classifica&quot;= 'vicino al traffico (L)' "/>
+          <rule key="{ccd69f68-6196-451d-9fb6-56638b6d4765}" symbol="4" label="Vicino a traffico veloce" filter="&quot;classifica&quot; = 'vicino al traffico (V)' or  &quot;classifica&quot; = 'vicino alla strada' &#xa;"/>
+        </rules>
+        <symbols>
+          <symbol force_rhr="0" alpha="1" type="fill" name="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="11,234,0,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="Inch" k="offset_unit"/>
+              <prop v="11,234,0,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="Inch" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" alpha="1" type="fill" name="1" clip_to_extent="1">
+            <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="184,234,0,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="Inch" k="offset_unit"/>
+              <prop v="184,234,0,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="Inch" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" alpha="1" type="fill" name="2" clip_to_extent="1">
+            <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="234,203,0,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="234,203,0,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" alpha="1" type="fill" name="3" clip_to_extent="1">
+            <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="239,136,10,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="Inch" k="offset_unit"/>
+              <prop v="239,136,10,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="Inch" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" alpha="1" type="fill" name="4" clip_to_extent="1">
+            <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="234,45,11,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="234,45,11,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ID_E">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="highway">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bicycle">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="foot">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="lanes">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="cycleway">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="segregated">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="maxspeed">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="route">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_TY_PZ_CC">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="class_1">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="class_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="classifica">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="id"/>
+        <alias index="1" name="" field="ID_E"/>
+        <alias index="2" name="" field="highway"/>
+        <alias index="3" name="" field="bicycle"/>
+        <alias index="4" name="" field="foot"/>
+        <alias index="5" name="" field="lanes"/>
+        <alias index="6" name="" field="cycleway"/>
+        <alias index="7" name="" field="segregated"/>
+        <alias index="8" name="" field="maxspeed"/>
+        <alias index="9" name="" field="route"/>
+        <alias index="10" name="" field="D_TY_PZ_CC"/>
+        <alias index="11" name="" field="class_1"/>
+        <alias index="12" name="" field="class_2"/>
+        <alias index="13" name="" field="classifica"/>
+      </aliases>
+      <defaults>
+        <default expression="" field="id" applyOnUpdate="0"/>
+        <default expression="" field="ID_E" applyOnUpdate="0"/>
+        <default expression="" field="highway" applyOnUpdate="0"/>
+        <default expression="" field="bicycle" applyOnUpdate="0"/>
+        <default expression="" field="foot" applyOnUpdate="0"/>
+        <default expression="" field="lanes" applyOnUpdate="0"/>
+        <default expression="" field="cycleway" applyOnUpdate="0"/>
+        <default expression="" field="segregated" applyOnUpdate="0"/>
+        <default expression="" field="maxspeed" applyOnUpdate="0"/>
+        <default expression="" field="route" applyOnUpdate="0"/>
+        <default expression="" field="D_TY_PZ_CC" applyOnUpdate="0"/>
+        <default expression="" field="class_1" applyOnUpdate="0"/>
+        <default expression="" field="class_2" applyOnUpdate="0"/>
+        <default expression="" field="classifica" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="id"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="ID_E"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="highway"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="bicycle"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="foot"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="lanes"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="cycleway"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="segregated"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="maxspeed"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="route"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="D_TY_PZ_CC"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="class_1"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="class_2"/>
+        <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="classifica"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="id"/>
+        <constraint desc="" exp="" field="ID_E"/>
+        <constraint desc="" exp="" field="highway"/>
+        <constraint desc="" exp="" field="bicycle"/>
+        <constraint desc="" exp="" field="foot"/>
+        <constraint desc="" exp="" field="lanes"/>
+        <constraint desc="" exp="" field="cycleway"/>
+        <constraint desc="" exp="" field="segregated"/>
+        <constraint desc="" exp="" field="maxspeed"/>
+        <constraint desc="" exp="" field="route"/>
+        <constraint desc="" exp="" field="D_TY_PZ_CC"/>
+        <constraint desc="" exp="" field="class_1"/>
+        <constraint desc="" exp="" field="class_2"/>
+        <constraint desc="" exp="" field="classifica"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

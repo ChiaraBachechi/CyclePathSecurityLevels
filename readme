@@ -1,1 +1,9 @@
+This project is implemented using QGIS software (https://www.qgis.org/it/site/forusers/download.html).
+Meaning of the files:
+Geoportale [.cpg,.dbf,.prj,.shx]: shapefile obtained from https://geoportale.regione.emilia-romagna.it/catalogo/dati-cartografici/cartografia-di-base/database-topografico-regionale/viabilita-e-trasporti/strade/layer.
+OSM_Buffer [.cpg,.dbf,.prj,.shx]: shapefile obtained applying buffering to OSM data acquired using Overpass Turbo (https://overpass-turbo.eu/) and QickOSM (https://plugins.qgis.org/plugins/QuickOSM/)
+mappa_finale [.cpg,.dbf,.prj,.shx]: shapefile of the final map with the classification of cycle path based on security level.
+stile_mappa_finale [.qlr]: file of layer definition for QGIS. If this file is loaded in a QGIS project it will display the map based on security levels with the associated style.
+traffico_misto [.cpg,.dbf,.prj,.shx]: shapefile of the final map with the classification based on mixed traffic.
+stile_traffico_misto [.qlr]: file of layer definition for QGIS. If this file is loaded in a QGIS project it will display the map based on mixed traffic with the associated style.
 
